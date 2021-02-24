@@ -5,8 +5,11 @@ ul, #myUL {
   
   /* Remove margins and padding from the parent ul */
   #myUL {
-    margin: 0;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-bottom: 0px;
     padding: 0;
+    width: 200px;
   }
   
   /* Style the caret/arrow */
@@ -17,7 +20,7 @@ ul, #myUL {
   
   /* Create the caret/arrow with a unicode, and style it */
   .caret::before {
-    content: "\25B6";
+    content: "\22BF";
     color: black;
     display: inline-block;
     margin-right: 6px;
@@ -25,11 +28,12 @@ ul, #myUL {
   
   /* Rotate the caret/arrow icon when clicked on (using JavaScript) */
   .caret-down::before {
-    transform: rotate(90deg); 
+    transform: rotate(315deg); 
   }
   
   /* Hide the nested list */
   .nested {
+    margin-left: -20px;
     display: none;
   }
   
